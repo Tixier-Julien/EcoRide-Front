@@ -52,11 +52,15 @@ p{
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
+        justify-content: space-evenly;
     }
 }
 
 //Styles de la barre de recherche
+
+  #NavPassagers, #NavDate{
+    cursor: pointer;
+  }
 
   .search-bar {
     padding: 20px;
@@ -169,3 +173,11 @@ p{
   }
 }
 
+.home-content .container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  img{
+  width: 300px;
+  }
+}

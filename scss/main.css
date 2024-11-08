@@ -12015,7 +12015,11 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
+}
+
+#NavPassagers, #NavDate {
+  cursor: pointer;
 }
 
 .search-bar {
@@ -12112,4 +12116,12 @@ p {
     width: auto;
     max-width: 150px;
   }
+}
+.home-content .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.home-content .container img {
+  width: 300px;
 }/*# sourceMappingURL=main.css.map */
