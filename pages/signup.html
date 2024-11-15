@@ -7,15 +7,29 @@
 </head>
 <body>
     <section class="formulaire form-sign signup-page">
-        <div class="p-3 login-form text-center">
-            <h2 class="text-dark">Créer un compte</h2>
+        <div class="container p-3 login-form">
+            <h2 class="text-dark text-center mb-4">Créer un compte</h2>
             <form action="#" method="post">
-                <input type="text" name="username" placeholder="Nom d'utilisateur" required>
-                <input type="email" name="email" placeholder="Email" required>
-                <input type="password" name="password" placeholder="Mot de passe" required>
-                <input type="password" name="confirm_password" placeholder="Confirmer le mot de passe" required>
-                <button class="btn btn-primary m-2" type="submit">Créer mon compte</button>
-                <p>Vous avez déjà un compte ? <br> <a href="/connexion">Connectez-vous ici.</a></p>
+                <div class="mb-2">
+                    <label for="Pseudo" class="text-primary">Nom d'utilisateur</label>
+                    <input type="text" id="PseudoInput" placeholder="Nom d'utilisateur" required>
+                </div>
+                <div class="mb-2">
+                    <label for="EmailInput" class="text-primary">Email</label>
+                    <input type="text" name="username" placeholder="Nom d'utilisateur" required>
+                </div>
+                <div class="mb-2">
+                    <label for="PasswordInput" class="text-primary">Mot de passe</label>
+                    <input type="password" id="PasswordInput" placeholder="Mot de passe" required>
+                </div>
+                <div class="mb-2">
+                    <label for="ConfirmPasswordInput" class="text-primary">Confirmez le mot de passe</label>
+                    <input type="password" id="ConfirmPasswordInput" placeholder="Confirmez votre mot de passe" required>
+                </div>
+                <div class="text-center">
+                    <button class="btn btn-primary m-2" type="submit">Créer mon compte</button>
+                    <p>Vous avez déjà un compte ? <br> <a href="/signin">Connectez-vous ici.</a></p>
+                </div>
             </form>
         </div>
     </section>

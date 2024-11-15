@@ -8,13 +8,24 @@
 <body>
 
     <section class="formulaire form-contact">
-        <div class="p-3 login-form text-center">
+        <div class="container p-3 login-form text-primary">
             <h2 class="text-dark">Nous contacter</h2>
             <form action="#" method="post">
-                <input type="email" name="email" class="form-control mb-3" placeholder="Entrez votre adresse mail" required>
-                <input type="text" name="titre-contact" class="form-control mb-3" placeholder="Entrez votre titre" required>
-                <textarea class="form-control mb-3" rows="6" name="description-contact" placeholder="Merci de saisir votre message ici" required></textarea>
-                <button class="btn btn-primary m-2" type="submit">Envoyer</button>
+                <div class="mb-2">
+                    <label for="EmailContactInput">Votre email</label>
+                    <input type="email" placeholder="Entrez votre adresse mail" required>
+                </div>
+                <div class="mb-2">
+                    <label for="TitreMessageInput">Objet du message</label>
+                    <input type="text" placeholder="Objet du message" required>
+                </div>
+                <div class="mb-2">
+                    <label for="TextAreaInput">Votre message</label>
+                    <textarea class="form-control" rows="6" placeholder="Merci de saisir votre message ici" required></textarea>
+                </div>
+                <div class="text-center">
+                    <button class="btn btn-primary m-2" type="submit">Envoyer</button>
+                </div>
             </form>
         </div>
     </section>

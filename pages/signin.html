@@ -7,13 +7,21 @@
 </head>
 <body>
     <section class="formulaire form-sign signin-page">
-        <div class="p-3 login-form text-center">
-            <h2 class="text-dark">Connexion</h2>
+        <div class="container p-3 login-form">
+            <h2 class="text-dark text-center mb-4">Connexion</h2>
             <form action="#" method="post">
-                <input type="text" name="username" placeholder="Nom d'utilisateur" required>
-                <input type="password" name="password" placeholder="Mot de passe" required>
-                <button class="btn btn-primary m-2" type="submit">Se connecter</button>
-                <p>Vous n'avez pas encore de compte ? <br> <a href="/inscription">Créer un compte ici.</a></p>
+                <div class="mb-2">
+                    <label for="UserNameInput" class="text-primary">Nom d'utilisateur</label>
+                    <input type="text" id="UserNameInput" placeholder="Nom d'utilisateur" required>
+                </div>
+                <div class="mb-2">
+                    <label for="PasswordLoginInput" class="text-primary">Mot de passe</label>
+                    <input type="password" id="PasswordLoginInput" placeholder="Mot de passe" required>
+                </div>
+                <div class="text-center">
+                    <button class="btn btn-primary m-2" type="submit">Se connecter</button>
+                    <p>Vous n'avez pas encore de compte ? <br> <a href="/signup">Créer un compte ici.</a></p>
+                </div>
             </form>
         </div>
     </section>
