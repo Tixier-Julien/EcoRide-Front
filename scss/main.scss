@@ -155,7 +155,14 @@ p{
 
 
 // Styles pour les écrans de tablette
-@media(max-width: 992px){
+@media(max-width:768px) {
+    .search-bar{
+      width: 100%;
+
+    }
+}
+
+@media(max-width: 991px){
   #NavDepart, #NavArrivee, #NavDate, #NavButton{
     border: none;
     border-left: 2px solid;
