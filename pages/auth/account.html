@@ -6,48 +6,66 @@
     <title>Mon compte</title>
 </head>
 <body>
-    <section class="form-account signup-page">
-        <div class="container">
-            <div class="p-3 login-form">
+    <section class="form-account">
+        <div class="container p-3 formulaire">
+            <div class="p-4 login-form account-form">
                 <h2 class="text-dark text-center mb-4">Mes informations</h2>
                 <form action="#" method="post">
-                    <div class="mb-2">
-                        <label for="immatriculation" class="text-primary">Plaque d'immatriculation</label>
-                        <input type="text" id="immatriculation" placeholder="Plaque d'immatriculation" required>
-                    </div>
-                    <div class="mb-2">
-                        <label for="dateImmatriculationn" class="text-primary">Date de première immatriculation</label>
-                        <input type="date" id="dateImmatriculationn" placeholder="Date de première immatriculation" required>
-                    </div>
-                    <div class="mb-2">
-                        <label for="marqueVoiture" class="text-primary">Marque</label>
-                        <input type="text" id="marqueVoiture" placeholder="Marque du véhicule" required>
-                    </div>
-                    <div class="mb-2">
-                        <label for="modeleVoiture" class="text-primary">Modèle</label>
-                        <input type="text" id="modeleVoiture" placeholder="Modele du véhicule" required>
-                    </div>
-                    <div class="mb-2">
-                        <label for="couleurVoiture" class="text-primary">Couleur</label>
-                        <input type="text" id="couleurVoiture" placeholder="Couleur du véhicule" required>
-                    </div>
-                    <div class="mb-2">
-                        <label for="placesDispo" class="text-primary">Nombre de places disponibles</label>
-                        <select id="placesDispo">
-                            <option value="">1</option>
-                            <option value="">2</option>
-                            <option value="">3</option>
-                            <option value="">4</option>
-                        </select>
-                    </div>
-                    <div class="text-center">
-                        <button class="btn btn-primary m-2" type="submit">Créer mon compte</button>
-                        <p>Vous avez déjà un compte ? <br> <a href="/signin">Connectez-vous ici.</a></p>
+                    <div class="row">
+                        <div class="col-md-6 mb-2">
+                            <label for="immatriculation" class="text-primary">Plaque d'immatriculation</label>
+                            <input type="text" id="immatriculation" class="form-control" placeholder="Plaque d'immatriculation" required>
+                        </div>
+                        <div class="col-md-6 mb-2">
+                            <label for="dateImmatriculationn" class="text-primary">Date de première immatriculation</label>
+                            <input type="date" id="dateImmatriculationn" class="form-control navPointer" placeholder="Date de première immatriculation" required>
+                        </div>
+                        <div class="col-md-6 mb-2">
+                            <label for="marqueVoiture" class="text-primary">Marque</label>
+                            <input type="text" id="marqueVoiture" class="form-control" placeholder="Marque du véhicule" required>
+                        </div>
+                        <div class="col-md-6 mb-2">
+                            <label for="modeleVoiture" class="text-primary">Modèle</label>
+                            <input type="text" id="modeleVoiture" class="form-control" placeholder="Modele du véhicule" required>
+                        </div>
+                        <div class="col-md-6 mb-2">
+                            <label for="couleurVoiture" class="text-primary">Couleur</label>
+                            <input type="text" id="couleurVoiture" class="form-control" placeholder="Couleur du véhicule" required>
+                        </div>
+                        <div class="col-md-6 mb-2">
+                            <label for="placesDispo" class="text-primary">Nombre de places disponibles</label>
+                            <select id="placesDispo" class="form-select navPointer">
+                                <option value="">1</option>
+                                <option value="">2</option>
+                                <option value="">3</option>
+                                <option value="">4</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6 mb-2">
+                            <label for="accepteFumeur" class="text-primary">Acceptez-vous les fumeurs ?</label>
+                            <select id="accepteFumeur" class="form-select navPointer">
+                                <option value="">Oui</option>
+                                <option value="">Non</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6 mb-2">
+                            <label for="accepteAnimaux" class="text-primary">Acceptez-vous les animaux ?</label>
+                            <select id="accepteAnimaux" class="form-select navPointer">
+                                <option value="">Oui</option>
+                                <option value="">Non</option>
+                            </select>
+                        </div>
+                        <div class="col-12 mb-2">
+                            <label for="autresPreferences" class="text-primary">Autres préférences (facultatif)</label>
+                            <textarea id="autresPreferences" class="form-control"></textarea>
+                        </div>
+                        <div class="col-12 text-center">
+                            <button class="btn btn-primary m-2" type="submit">Envoyez mes informations</button>
+                        </div>
                     </div>
                 </form>
             </div>
         </div>
-        
     </section>
 </body>
 </html>

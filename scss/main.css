@@ -11976,10 +11976,7 @@ main {
 }
 
 body {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
+  min-height: 100%;
 }
 
 footer.footer {
@@ -11992,7 +11989,14 @@ footer.footer {
 
 p {
   font-family: "Roboto", serif;
-  font-size: 18px;
+}
+
+h1, .h1 {
+  font-family: "Montserrat", sans-serif;
+}
+
+h2, .h2, h3, .h3 {
+  font-family: "Montserrat", sans-serif;
 }
 
 .hero-scene {
@@ -12007,7 +12011,7 @@ p {
   height: 100%;
   background-size: cover;
   background-position: center;
-  filter: brightness(0.6);
+  filter: brightness(0.7);
 }
 .hero-scene * {
   position: relative;
@@ -12046,16 +12050,12 @@ p {
   font-size: 16px;
 }
 
-#NavButton:hover {
-  background-color: #4DDE8E;
-}
-
 .NavBar {
   display: flex;
   justify-content: center;
 }
 
-#NavDate {
+.navPointer {
   cursor: pointer;
 }
 
@@ -12069,22 +12069,26 @@ p {
   font-weight: bold;
 }
 
+#NavButton:hover {
+  background-color: #4DDE8E;
+}
+
 .formulaire {
   display: flex;
   justify-content: center;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 100vh;
+  min-height: 100vh;
   padding: 20px;
 }
 
 .form-account {
-  display: flex;
-  justify-content: center;
+  background-image: url(../images/business-962310_1920.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  min-height: 100vh;
   padding: 20px;
 }
 
@@ -12096,23 +12100,16 @@ p {
   background-image: url(../images/road-4258554_1920.jpg);
 }
 
-.form-account {
-  background-image: url(../images/business-962310_1920.jpg);
-}
-
 .login-form {
   background: linear-gradient(45deg, #ffffff, #e0e0e0 30%, #b0b0b0 60%, #808080 90%, #404040);
   margin: auto;
   border-radius: 8px;
   opacity: 95%;
-  width: 100%;
   max-width: 400px;
-  max-height: -moz-fit-content;
-  max-height: fit-content;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
 }
 
-.login-form input, .login-form select {
+.login-form input, .login-form select, .login-form textarea {
   width: 100%;
   padding: 12px;
   margin: 5px 0;
@@ -12121,15 +12118,26 @@ p {
 }
 
 @media (max-width: 768px) {
-  footer {
-    position: absolute;
-    bottom: 0;
+  p {
+    font-size: 16px;
+  }
+  h1, .h1 {
+    font-size: 28px;
+  }
+  h2, .h2 {
+    font-size: 24px;
+  }
+  h3, .h3 {
+    font-size: 22px;
   }
   .search-bar {
     width: 100%;
   }
 }
 @media (max-width: 991px) {
+  .account-form {
+    max-width: 100vh;
+  }
   #NavDepart, #NavArrivee, #NavDate, #NavButton {
     border: none;
     border-left: 2px solid;
@@ -12155,6 +12163,21 @@ p {
   }
 }
 @media (min-width: 992px) {
+  p {
+    font-size: 20px;
+  }
+  h1, .h1 {
+    font-size: 40px;
+  }
+  h2, .h2 {
+    font-size: 34px;
+  }
+  h3, .h3 {
+    font-size: 30px;
+  }
+  .account-form {
+    max-width: 100vh;
+  }
   #NavDepart, #NavArrivee, #NavDate {
     border: none;
     border-top: 2px solid;
