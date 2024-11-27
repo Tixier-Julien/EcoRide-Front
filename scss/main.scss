@@ -7,11 +7,15 @@ html{
 }
 
 main {
-  margin-bottom:50px;
+  margin-bottom:75px;
+  
 }
 
 body{
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
 }
 
 footer.footer{
@@ -124,12 +128,25 @@ p{
   padding: 20px;
 }
 
+.form-account{
+  display: flex;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 20px;
+}
+
 .form-sign{
   background-image: url(../images/traffic-3612474_1920.jpg);
 }
 
 .form-contact{
   background-image: url(../images/road-4258554_1920.jpg);
+}
+
+.form-account{
+  background-image: url(../images/business-962310_1920.jpg);
 }
 
 // Style du conteneur de formulaire de connexion/inscription
@@ -145,7 +162,7 @@ p{
 }
 
 // Style des champs du formulaire 
-.login-form input {
+.login-form input, .login-form select {
     width: 100%;
     padding: 12px;
     margin: 5px 0;
@@ -155,11 +172,14 @@ p{
 
 
 // Styles pour les écrans de tablette
-@media(max-width:768px) {
-    .search-bar{
-      width: 100%;
-
-    }
+@media(max-width:768px) {  
+  footer{
+    position: absolute;
+    bottom: 0;
+  }
+  .search-bar{
+    width: 100%;
+  }
 }
 
 @media(max-width: 991px){
